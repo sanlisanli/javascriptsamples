@@ -1,0 +1,92 @@
+	.wrap{
+				width: 400px;
+				height: 480px;
+				border: 2px solid black;
+				box-shadow:2px 2px 8px black ;
+				position: relative;
+			}
+			.show{
+				position: relative;
+				height: 400px;
+				width:100%;
+				background: url(./image/1-big.jpg)no-repeat;
+				background-size:100% 100% ;
+				z-index: 99;
+			}
+			
+			.show:hover .eyes,.wrap:hover .largeimg{
+				display: block;
+			}
+			
+			.show .eyes{
+				position: absolute;
+				width: 60%;
+				height: 60%;
+				background: chocolate;
+				opacity: 0.5;
+				display: none;
+			}
+			
+			.nav{
+				position: absolute;
+				width: 100%;
+				height: 80px;
+			}
+			.nav a {
+				position: absolute;
+				height: 100%;
+				width: 40px;
+				right: 20px;
+				top: 0;
+			}
+			.nav a:nth-of-type(1){
+				left: 20px;
+				background: url(image/prev.png)no-repeat center center;
+			}
+			.nav a:nth-of-type(2){
+				background: url(image/next.png)no-repeat center center;
+			}
+			
+			.navScrollWrap{
+				position: absolute;
+				left: 64px;
+				height: 100%;
+				width: 252px;
+				top: 0;
+				overflow: hidden;
+			}
+			.navScroll{
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: flex;
+				align-items: center;
+				height: 100%;
+				width: 1000%;
+			}
+			.navScroll span{
+				height: 70%;
+				width: 60px;
+				border: 2px solid transparent;
+				box-sizing: border-box;
+				background: url(image/1-small.jpg);
+				margin-right: 4px;
+			}
+			.navScroll span.active{
+				border: 2px solid salmon;
+			}
+			.navScroll span:hover{
+				border: 2px solid salmon;
+			}
+			
+			.largeimg{
+				display: none;
+				position: absolute;
+				border: 2px solid black;
+				left:calc(100% + 20px);
+				background-size: 1000px 1000px;
+				background-image:url(image/1-big.jpg) ;
+				background-repeat:no-repeat ;
+				background-position:0 0 ;
+				top: -2px;
+			}
