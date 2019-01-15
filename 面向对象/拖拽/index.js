@@ -1,4 +1,4 @@
-var demo=document.querySelector('.demo');
+var demo=document.querySelector('.demo');//对象
 function Drag(ele){
 	this.box=ele;
 	this.box.style.position='absolute';
