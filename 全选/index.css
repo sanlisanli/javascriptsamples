@@ -1,0 +1,79 @@
+ *{
+    margin: 0;
+    padding:0;
+  }
+  li{
+    list-style: none;
+  }
+  .wrap{
+    width: 680px;
+    height: 420px;
+    background-color:#e0e0e0;
+    background-size: 100% 100%;
+    margin: 100px auto;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .inner{
+    width: 520px;
+    height: 350px;
+    margin: auto;
+    border-radius: 8px;
+    background: #fff;
+  }
+  .inner ul{
+    width: 100%;
+    height: 86%;
+    display: flex;
+    flex-flow: column;
+  }
+  .inner ul li{
+
+    padding-top: 14px;
+    box-sizing: border-box;
+    flex: 1;
+    border-bottom: 1px solid rgba(57, 56, 52, 0.77);
+  }
+  .inner ul li span,.inner ul li input{
+    float: left;
+  }
+  .inner ul li span{
+    line-height: 18px;
+    font-size: 16px;
+  }
+  .inner ul li input{
+    height: 18px;
+    width: 32px;
+  }
+  .inner ul li em{
+    float: right;
+    margin-right: 10px;
+    font: 16px/21px arial;
+    font-style: normal;
+  }
+  .inner ul li:hover{
+    background-color: rgba(229, 220, 232,0.5);
+  }
+  .inner ul li:nth-of-type(2n){
+    background-color: #69f0ae;
+  }
+  .inner ul li.active{
+    background-color: #de4a63;
+  }
+  .inner .control{
+    padding-top: 14px;
+    box-sizing: border-box;
+    height: 14%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+ 
+  }
+  .inner .control input{
+    width: 32px;
+    height: 18px;
+    /* vertical-align: middle; */
+    display: inline-block;
+  }
+  .inner .control span{
+    vertical-align: top;
+  }
