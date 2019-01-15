@@ -13,7 +13,8 @@ Drag.prototype.init=function(){
 }
 Drag.prototype.fnDown=function(e){
 	var box = this.box,e = e || window.event;
-	//当前对象的外边框到它上层对象的内边框之间的距离
+	//offset当前对象的外边框到它上层对象的内边框之间的距离
+	//disX,disY:cursor到box左上角的dis
 	this.disX=e.pageX-box.offsetLeft;
 	this.disY=e.pageY-box.offsetTop;
 	document.addEventListener('mousemove',this.fnMove,false);
