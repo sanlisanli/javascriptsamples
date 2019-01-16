@@ -10,7 +10,7 @@ var range=[480,600,1000,1400,0];
 var prevActive=0;
 
 var botTop=bot.offsetTop;
-window.onscroll=function(e){
+window.onscroll=function(e){//window.onscroll滚动事件
 	var scrollY=window.pageYOffset;
 	if(scrollY>=botTop){
 		bot.style.position='fixed';
