@@ -86,16 +86,3 @@ function createSlide(data){
 	return {strSlides,strNavs};
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
