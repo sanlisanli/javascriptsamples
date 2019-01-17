@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>mikasa</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+  <body>
+  <div></div>
+  <script src="index.js"></script>
+  <script>
+    var box=mv.$('div');
+	var str='';
+	var n=-1;
+	for(var i=0;i<100;i++){
+			str += `<span style = "left:${(i%10)*10}%;top:${(n=i%10==0?++n:n)*10}%;background-position:${-i%10*100}% ${-n*100}%"></span>`
+		}
+	box.innerHTML=str;
+	var spans=mv.$('span');
+	for(var i=0;i<100;i++){
+	  spans[i].onOff=true;
+	  spans[i].onmouseover=function(){
+	    if(this.onOff){
+		  this.style.opacity='1';
+		  this.onOff=false;
+		}
+		this.style.transform='scale(1.5)';
+		this.style.zIndex='99';
+	  }
+	  spans[i].onmouseout=function(){
+	    this.style.transform='scale(1)';
+		this.style.zIndex='';
+	  }
+	}
+	
+  </script>
+  </body>
+</html>
