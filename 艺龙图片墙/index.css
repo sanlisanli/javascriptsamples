@@ -1,0 +1,54 @@
+body, ul, h4{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(147, 144, 145);
+}
+.container {
+    margin-top: 100px;
+}
+.pics {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pics li{
+    float: left;
+    height: 260px;
+    width: 172px;
+    transition: 300ms;
+}
+.pics li:hover .mask h4 {
+    display: none;
+}
+.pics li a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.pics li a .mask, .pics li a .bg-box{
+    height: 100%;
+    width: 100%;
+}
+.pics li a .mask {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+}
+.pics li a .mask h4 {
+    width: 30px;
+    color: #fff;
+    font: 30px/30px Microsoft Yahei;
+}
+.pics li a .bg-box {
+    background-position: center;
+    background-repeat: no-repeat;
+}
