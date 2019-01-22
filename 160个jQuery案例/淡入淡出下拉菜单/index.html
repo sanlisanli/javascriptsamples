@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navigation li').hover(
+                function () {
+                    $('ul',this).fadeIn();
+                },
+                function () {
+                    $('ul',this).fadeOut();
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+<div style="width: 650px;margin: 0 auto"><br/>
+    <br/>
+    <br/>
+    <ul class="navigation">
+        <li><a href="#">Main Cat 1</a> </li>
+        <li><a href="#">Main CAt 2</a>
+          <ul>
+              <li><a href="#">Sub Cat 2-1</a></li>
+              <li><a href="#">Sub Cat 2-2</a></li>
+              <li><a href="#">Sub Cat 2-3</a></li>
+              <li><a href="#">Sub Cat 2-4</a></li>
+              <li><a href="#">Sub Cat 2-5</a></li>
+          </ul>
+            <div class="clear"></div>
+        </li>
+        <li><a href="#">Main Cat 3 </a>
+            <ul>
+                <li><a href="#">Sub Cat 3-1</a></li>
+                <li><a href="#">Sub Cat 3-2</a></li>
+                <li><a href="#">Sub Cat 3-3</a></li>
+                <li><a href="#">Sub Cat 3-4</a></li>
+                <li><a href="#">Sub Cat 3-5</a></li>
+                <li><a href="#">Sub Cat 3-6</a></li>
+                <li><a href="#">Sub Cat 3-7</a></li>
+            </ul>
+            <div class="clear"></div>
+        </li>
+        <li><a href="#">Main Cat </a></li>
+    </ul>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
