@@ -1,0 +1,38 @@
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.battery{
+    width: 6em;
+    height: 3em;
+    color: black;
+    border: 3px solid currentColor;
+    border-radius: 10px;
+    font-size: 20px;
+    position: relative;
+    background-image: linear-gradient(to right, springgreen, springgreen);
+    background-repeat: no-repeat;
+    background-size: 10% 80%;
+    background-position: top .3em left .3em;
+    animation: charging 5s steps(8) infinite;
+}
+.battery::after{
+    position: absolute;
+    top: 0.5em;
+    right: -0.6em;
+    content: '';
+    width: 6px;
+    height: 40px;
+    background-color: currentColor;
+    border-radius: 0 .2em .2em 0;
+}
+@keyframes charging {
+    from{
+        background-size: 10% 80%;
+    }
+    to{
+        background-size: 100% 80%;
+    }
+}
