@@ -1,0 +1,64 @@
+body { background: #E9E5E2 ; }
+
+#skill {
+    list-style: none;
+    font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    width: 296px;
+    margin: 50px auto 0;
+    position: relative;
+    line-height: 2em;
+    padding: 30px 0;
+}
+
+#skill li {
+    margin-bottom:50px;
+    background:#e9e5e2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+    background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+    background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+    height:20px;
+    border-radius:10px;
+    -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+    -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+    box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+}
+
+#skill li h3 {
+    position:relative;
+    top:-25px;
+}
+
+.bar {
+    height:18px;
+    margin:1px 2px;
+    position:absolute;
+    border-radius:10px;
+    -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+}
+
+.graphic-design {
+    width:100%;
+    -moz-animation:graphic-design 2s ease-out;
+    -webkit-animation:graphic-design 2s ease-out;
+    background-color: #a1ce5b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+@-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:100%;}  }
+@-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
+
+@-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:80%;}  }
