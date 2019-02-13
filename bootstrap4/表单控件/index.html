@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>表单控件: input</h2>
+    <p>以下实例使用两个 input 元素，一个是 text，一个是 password ：</p>
+    <form>
+        <div class="form-group">
+            <label for="usr">用户名:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="pwd">密码:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+    </form>
+    <h2>表单控件: textarea</h2>
+    <p>以下实例演示了 textarea 的样式。</p>
+    <form>
+        <div class="form-group">
+            <label for="comment">评论:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+    </form>
+    <h2>表单控件: checkbox</h2>
+    <p>以下实例包含了三个选项。最后一个是禁用的：</p>
+    <form>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 2
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+            </label>
+        </div>
+    </form>
+    <h2>表单控件: select</h2>
+    <p>以下表单包含了两个下拉菜单 (select 列表):</p>
+    <form>
+        <div class="form-group">
+            <label for="sel1">单选下拉菜单:</label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>
+            <label for="sel2">多选下拉菜单(按住 shift 键，可以选取多个选项):</label>
+            <select multiple class="form-control" id="sel2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </form>
+    <h2>表单控件: radio</h2>
+    <p>以下实例包含了三个选项。最后一个是禁用的：</p>
+    <form>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Option 1</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Option 2</label>
+        </div>
+        <div class="radio disabled">
+            <label><input type="radio" name="optradio" disabled>Option 3</label>
+        </div>
+    </form>
+</div>
+</body>
+</html>
