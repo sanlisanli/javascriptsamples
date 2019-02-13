@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+    <h3>输入框组</h3>
+    <p> .input-group .input-group 类来向表单输入框中添加更多的样式，如图标、文本或者按钮，.input-group-prepend 类添加在前面，.input-group-append 添加在后面。</p>
+    <p>使用 .input-group-text 类来设置文本的样式。</p>
+
+    <form action="/action_page.php">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+            <div class="input-group-append">
+                <span class="input-group-text">@runoob.com</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h1>输入框添加按钮组</h1>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button">Basic Button</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Some text">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-append">
+            <button class="btn btn-success" type="submit">Go</button>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Something clever..">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="button">OK</button>
+            <button class="btn btn-danger" type="button">Cancel</button>
+        </div>
+    </div>
+    <h3>设置下拉菜单</h3>
+    <p>输入框中添加下拉菜单不需要使用 .dropdown 类。</p>
+    <form>
+        <div class="input-group mt-3 mb-3">
+            <div class="input-group-prepend">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                    选择网站
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.google.com">GOOGLE</a>
+                    <a class="dropdown-item" href="http://www.runoob.com">RUNOOB</a>
+                    <a class="dropdown-item" href="https://www.taobao.com">TAOBAO</a>
+                </div>
+            </div>
+            <input type="text" class="form-control" placeholder="网站地址">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
