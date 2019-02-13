@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h3>弹出框实例</h3> <br><br><br><br><br><br>
+    <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">点我</a>
+    <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">点我</a>
+    <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">点我</a>
+    <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">点我</a>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>
