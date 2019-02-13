@@ -1,4 +1,0 @@
-# javascriptsamples  
-  
-  
-js notes .
