@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <bili></bili>
+</div>
+<p>局部组件</p>
+<div id="app1">
+    <bibi></bibi>
+</div>
+<script>
+    Vue.component('bili',{
+        template:'<h1>自定义组件！</h1>'
+    })
+    new Vue({
+        el:'#app'
+    })
+    var child={
+        template:'<h1>哔哩哔哩动画</h1>'
+    }
+    new Vue({
+        el:'#app1',
+        components:{
+            'bibi':child
+        }
+    })
+</script>
+</body>
+</html>
