@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+<div id="exe"></div>
+<div id="exa"></div>
+<script type="text/babel">
+    function Bili(props) {
+        return <h1>哔哩哔哩动画</h1>;
+    }
+    const ele=<Bili/>;
+    ReactDOM.render(
+        ele,
+        document.getElementById('exe')
+    );
+    function Name(props) {
+        return <h1>网站名称：{props.name}</h1>;
+    }
+    function Url(props) {
+        return <h1>网站地址：{props.url}</h1>;
+    }
+    function App() {
+        return (
+            <div>
+                <Name name="哔哩哔哩"></Name>
+                <Url url="http://www.bilibili.com"></Url>
+            </div>
+        );
+    }
+    ReactDOM.render(
+        <App/>,
+        document.getElementById('exa')
+    );
+</script>
+</body>
+</html>
