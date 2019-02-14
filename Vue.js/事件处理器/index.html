@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="counter+=1">增加1</button>
+    <p>这个按钮被点击了{{counter}}次</p>
+</div>
+<div id="app1">
+    <button v-on:click="greet">Greet</button>
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            counter:0
+        }
+    })
+    new Vue({
+        el:'#app1',
+        data:{
+            name:'Vue.js'
+        },
+        methods:{
+            greet:function (event) {
+                alert('哔哩哔哩'+this.name+'!')
+            }
+        }
+    })
+</script>
+</body>
+</html>
