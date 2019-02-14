@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app1">
+    <p>{{message}}</p>
+</div>
+<div id="app2">
+    <div v-html="message"></div>
+</div>
+<script>
+    new Vue({
+        el:'#app1',
+        data:{
+            message:'哔哩哔哩'
+        }
+    })
+</script>
+<script>
+    new Vue({
+        el:'#app2',
+        data:{
+            message:'<h1>哔哩哔哩</h1>'
+        }
+    })
+</script>
+</body>
+</html>
