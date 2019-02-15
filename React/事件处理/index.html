@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+<div id="exa"></div>
+<script type="text/babel">
+    class Toggle extends React.Component{
+        constructor(props){
+            super(props)
+            this.state={isToggleOn:true};
+            this.handleClick=this.handleClick.bind(this);
+        }
+        handleClick(){
+            this.setState(prevState=>({
+                isToggleOn: !prevState.isToggleOn
+            }));
+        }
+        render(){
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.isToggleOn?'ON':'OFF'}
+                </button>
+            );
+        }
+    }
+    ReactDOM.render(
+        <Toggle/>,
+        document.getElementById('exa')
+    )
+</script>
+</body>
+</html>
