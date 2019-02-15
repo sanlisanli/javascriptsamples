@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mikasa</title>
+</head>
+<body>
+<h1>javascript</h1>
+<p id="demo">javascript能改变HTML内容</p>
+<button type="button" onclick="update()">update</button>
+<button type="button" onclick="changeColor()">修改颜色</button>
+<script>
+    function update() {
+        x=document.getElementById('demo');//找到DOM元素
+        x.innerHTML='哔哩哔哩动画';//改变内容
+    }
+    function changeColor() {
+        x=document.getElementById('demo');//找到DOM元素
+        x.style.color='#69f0ae';
+    }
+</script>
+</body>
+</html>
